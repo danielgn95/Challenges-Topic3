@@ -1,0 +1,48 @@
+3                                   number of test cases
+
+                                    test case 1
+6                                   number of user with paswords
+because can do must we what         passwords for ech user
+wedowhatwemustbecausewecan          login attempt
+
+we do what we must because we can   result
+
+
+2
+hello planet
+helloworld
+
+WRONG PASSWORD                      result
+
+
+3
+ab abcd cd
+abcd
+
+ab cd                               result
+
+
+---------------------------------------------------------------------------------------------------------------------
+
+list of passwords can be read with Pattern.compile(" ").splitAsStream(input here);
+
+This works like this:
+
+because can do must we what
+wedowhatwemustbecausewecan
+
+The program reads the string, and compares if the first section matched to any of the passwords
+if that password exist in the string, the program removes that string, and then starts again (recursion?)
+
+e.g. using the inputs above
+
+wedowhatwemustbecausewecan
+-we exist in the string and in the password list:   output: we
+-we is removed from the string
+
+dowhatwemustbecausewecan
+-do exist in the string and in the password list:   output: we do <- String += String?
+-do is removed from the string
+
+whatwemustbecausewecan
+etc etc until there are no more words in the string.

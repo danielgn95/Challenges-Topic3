@@ -1,0 +1,12 @@
+Sample Input
+
+4           int numbers to do exponential
+20.0000     test number 1
+5.0000      test number 2
+0.5000      test number 3
+-0.5000     test number 4
+
+2423600.1887    result test number 1
+143.6895        result test number 2
+1.6487          result test number 3
+0.6065          result test number 4
