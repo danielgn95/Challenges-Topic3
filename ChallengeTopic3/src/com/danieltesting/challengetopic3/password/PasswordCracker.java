@@ -48,7 +48,7 @@ public class PasswordCracker {
 //        I didn't know how to make this with passwords.forEach(), specifically the "continue;"
         for(String word : passwords){
             if (!loginAttempt.startsWith(word)) continue;
-            if (cracker(loginAttempt.substring(word.length()),passwords,path + word + " ",map)){
+            if (cracker(loginAttempt.substring(word.length()),passwords,path + word + " ",map)){ //Recursive section here, here the substring is shorter
                 map.put(loginAttempt,true);
                 return true;
             }

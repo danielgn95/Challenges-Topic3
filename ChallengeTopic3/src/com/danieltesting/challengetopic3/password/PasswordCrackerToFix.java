@@ -61,12 +61,18 @@ public class PasswordCrackerToFix {
 //            return crackerResult;
 //        }
 
-//        passwords.forEach( password -> {
+
+//     .Stream.takeWhile() <----------check if this one works
+//        passwords.stream().takeWhile( password -> {
 //            if (loginAttempt.startsWith(password)){
 //                crackerResult += password+" "+cracker(passwords,loginAttempt.substring(password.length()));
 //                return crackerResult;
+////                break;
 //            }
+////            return "";
 //        });
+
+
         System.out.println("attempt "+loginAttempt+" length"+loginAttempt.length());
 
         if (passwords.stream().noneMatch(password -> loginAttempt.contains(password))){
